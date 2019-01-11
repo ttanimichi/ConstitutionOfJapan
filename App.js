@@ -1,21 +1,43 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
-    );
-  }
-}
+import HomeStack from './stacks/HomeStack';
+import TemporaryScreen from './screens/TemporaryScreen';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const BottomTabNavigator = createBottomTabNavigator(
+  {
+    Home: {
+      screen: HomeStack,
+      navigationOptions: () => ({
+        title: '条項',
+      }),
+    },
+    Favorites: {
+      screen: TemporaryScreen,
+      navigationOptions: () => ({
+        title: 'お気に入り',
+      }),
+    },
+    History: {
+      screen: TemporaryScreen,
+      navigationOptions: () => ({
+        title: '履歴',
+      }),
+    },
+    Settings: {
+      screen: TemporaryScreen,
+      navigationOptions: () => ({
+        title: '設定',
+      }),
+    }
   },
-});
+  {
+    tabBarOptions: {
+      labelStyle: {
+        fontSize: 16,
+      }
+    }
+  }
+);
+
+export default createAppContainer(BottomTabNavigator);
