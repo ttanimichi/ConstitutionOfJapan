@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "ConstitutionOfJapan",
-    "slug": "ConstitutionOfJapan",
+    "name": "憲法",
+    "slug": "constitution-of-japan",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [
-      "ios",
-      "android"
+      "ios"
     ],
-    "version": "1.0.0",
+    "version": "0.1.0",
+    "githubUrl": "https://github.com/ttanimichi/constitution-of-japan",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -23,7 +23,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.ttanimichi.constitution-of-japan",
+      "supportsTablet": false
     }
   }
 }
