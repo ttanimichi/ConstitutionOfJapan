@@ -2,6 +2,7 @@ import React from 'react';
 import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
 
 import HomeStack from './stacks/HomeStack';
+import LicensesStack from './stacks/LicensesStack';
 import TemporaryScreen from './screens/TemporaryScreen';
 
 const BottomTabNavigator = createBottomTabNavigator(
@@ -24,10 +25,10 @@ const BottomTabNavigator = createBottomTabNavigator(
         title: '履歴',
       }),
     },
-    Settings: {
-      screen: TemporaryScreen,
+    Licenses: {
+      screen: LicensesStack,
       navigationOptions: () => ({
-        title: '設定',
+        title: '謝辞',
       }),
     }
   },
