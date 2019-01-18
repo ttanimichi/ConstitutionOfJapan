@@ -3,6 +3,7 @@ import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
 
 import HomeStack from './stacks/HomeStack';
 import LicensesStack from './stacks/LicensesStack';
+import FullText from './screens/FullText';
 import TemporaryScreen from './screens/TemporaryScreen';
 
 const BottomTabNavigator = createBottomTabNavigator(
@@ -19,10 +20,10 @@ const BottomTabNavigator = createBottomTabNavigator(
         title: 'お気に入り',
       }),
     },
-    History: {
-      screen: TemporaryScreen,
+    FullText: {
+      screen: FullText,
       navigationOptions: () => ({
-        title: '履歴',
+        title: '全文',
       }),
     },
     Licenses: {
