@@ -4,7 +4,6 @@ import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
 import HomeStack from './stacks/HomeStack';
 import LicensesStack from './stacks/LicensesStack';
 import FullText from './screens/FullText';
-import TemporaryScreen from './screens/TemporaryScreen';
 
 const BottomTabNavigator = createBottomTabNavigator(
   {
@@ -12,12 +11,6 @@ const BottomTabNavigator = createBottomTabNavigator(
       screen: HomeStack,
       navigationOptions: () => ({
         title: '条項',
-      }),
-    },
-    Favorites: {
-      screen: TemporaryScreen,
-      navigationOptions: () => ({
-        title: 'お気に入り',
       }),
     },
     FullText: {
