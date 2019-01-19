@@ -10,7 +10,7 @@ export default function FullText() {
         <View style={styles.container}>
 
           <View style={styles.header}>
-            <Text style={[styles.text, styles.textBold]}>全文</Text>
+            <Text style={[styles.text, styles.textBold]}>日本国憲法</Text>
           </View>
 
           <Divider />

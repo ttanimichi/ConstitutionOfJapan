@@ -37,3 +37,5 @@ export default function LicensesScreen({ navigation }) {
     </View>
   );
 }
+
+LicensesScreen.navigationOptions = { title: '謝辞' };

@@ -31,6 +31,8 @@ export default function HomeScreen({ navigation }) {
   );
 }
 
+HomeScreen.navigationOptions = { title: '条項' };
+
 const styles = StyleSheet.create({
   sectionContainer: {
     borderBottomWidth: 1,
