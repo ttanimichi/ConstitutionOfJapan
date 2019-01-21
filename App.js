@@ -30,7 +30,10 @@ const BottomTabNavigator = createBottomTabNavigator(
     tabBarOptions: {
       labelStyle: {
         fontSize: 16,
-      }
+      },
+      style: {
+        paddingBottom: 10,
+      },
     }
   }
 );
